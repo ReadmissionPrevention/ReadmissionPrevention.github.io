@@ -19,10 +19,17 @@
         <br>
         <input type="password" id="Password" placeholder="Password" required>
         <br>
-        <label for="Password" class="showPassword">
-        <input type="checkbox" onclick="myFunction()">Show Password
-        <!--Please write the function to show the password-->
-    </label>
+        <input type="checkbox" onclick="showPassword()">Show Password
+    <script>
+        function showPassword(){
+            let pass = document.getElementById("Password");
+  if (pass.type === "password") {
+    pass.type = "text";
+  } else {
+    pass.type = "password";
+  }
+}
+</script>
         <br>
         <button class="login" type="submit">login</button>
     </form>
