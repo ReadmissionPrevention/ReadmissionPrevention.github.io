@@ -14,14 +14,15 @@
 <body>
     <h1>Preventation of Readmission</h1>
 
-    <form action="main.html">
+    <form action="main.html" >
         <input type="text" id="Username" placeholder="Username" required>
         <br>
         <input type="password" id="Password" placeholder="Password" required>
         <br>
-        <input type="checkbox" onclick="showPassword()">Show Password
+        <label for="Password" class="showPassword">
+        <input type="checkbox" onclick="displayPass()">Show Password </label>
     <script>
-        function showPassword(){
+        function displayPass(){
             let pass = document.getElementById("Password");
   if (pass.type === "password") {
     pass.type = "text";
