@@ -33,7 +33,8 @@ button:hover {
     transform: scale(0.9);
 }
 
-p {
+p,
+label {
     color: black;
     margin-left: 20px;
 }
@@ -54,6 +55,12 @@ p {
     margin: 10px;
     border: solid rgb(45, 178, 223);
     border-radius: 25px;
+}
+
+.right {
+    position: relative;
+    bottom: 40px;
+    text-align: right;
 }
 
 .showPassword {
@@ -115,4 +122,5 @@ p {
     background-color: #ddd;
     color: white;
     text-align: center;
+    margin-top: 50px;
 }
